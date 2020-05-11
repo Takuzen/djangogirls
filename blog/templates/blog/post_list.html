@@ -1,9 +1,15 @@
 <html>
     <head>
-        <title>Ola's blog</title>
+        <title>tkz's blog</title>
     </head>
     <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
+    {% for post in posts %}
+        <div>
+            <p>{{ post.title }}</p>
+        </div>
+    {% endfor %}
+        <div>
+            <p>It works!</p>
+        </div>
     </body>
 </html>
